@@ -1,0 +1,55 @@
+
+<link rel="stylesheet" href="/css/fimServico.css">
+
+<form method="post" action="/fecharServico" class="fim_servico">
+    <div>
+        <label for="">Codigo: </label> 
+        <input type="text" name="codigo" class="codigo">
+        <button class="btn_servico">Buscar Dados</button>
+    </div>
+  
+    <div class="fim_cliente">
+          <h4>Cliente</h4>
+        <div>
+            <label for="">CPF: </label> <span class="res"></span>
+        </div>
+        <div>
+            <label for="">Nome: </label> <span class="res"></span>
+        </div> 
+    </div>
+    <div class="fim_veiculo">
+        <h4>Veiculo</h4>
+
+        <div>
+            <label for="">Modelo: </label> <span class="res"></span>
+        </div>
+        <div>
+            <label for="">Marca: </label> <span class="res"></span>
+        </div>
+        <div>
+            <label for="">Placa: </label> <span class="res"></span>
+        </div>
+        <div>
+            <label for="">Ano: </label> <span class="res"></span>
+        </div>
+    </div>
+    <div class="fim_resultado">
+        <h4>Serviço</h4>
+        <div>
+            <label for="">Hora Inicio:</label> <span class="res"></span>
+        </div>
+         <div>
+            <label for="">Hora Fim:</label> <span class="res"></span>
+        </div>
+        <div>
+            <label for="">Valor:</label> <span class="res"></span>
+        </div>
+        
+    </div>
+    <button class="btn_finalizar">Finalizar Serviço</button>
+
+</form>
+
+<script src="/js/buscar_servico.js"></script>
+<script src="/js/finalizar_servico.js"></script>
+ {{>voltar}}

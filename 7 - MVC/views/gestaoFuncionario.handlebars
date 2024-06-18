@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/css/gf.css">
+<div class="container_funcionarios">
+    <h1>Gestão de Funcionarios</h1>
+    <form action="/gestaoFuncionario" method="post">
+        <label for=""> <span>Nome</span> <input type="text" name="nome"></label>
+        <label for=""> <span>Endereço</span> <input type="text" name="endereco"></label>
+        <label for=""> <span>Cpf</span> <input type="text" name="cpf"></label>
+
+        <label for=""> <span>Telefone</span> <input type="text" name="telefone"></label>
+        <label for=""> <span>Senha</span> <input type="text" name="senha"></label>
+        <label for=""> <span>Email</span> <input type="text" name="email"></label>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <hr>
+    <table>
+        <head>
+            <tr>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Cpf</th>
+                <th>Telefone</th>
+                <th>Senha</th>
+                <th>Email</th>
+                <th>Editar</th>
+                <th>Deletar</th>
+            </tr>
+        </head>
+        <tbody>
+            {{#each data}}
+                <tr>
+                    <td>{{this.nome}}</td>
+                    <td>{{this.endereco}}</td>
+                    <td>{{this.cpf}}</td>
+                    <td>{{this.telefone}}</td>
+                    <td>{{this.senha}}</td>
+                    <td>{{this.email}}</td>
+                    <td id="td_editar">
+                        <img width="30" height="30" src="https://img.icons8.com/dusk/64/edit--v1.png" alt="edit--v1"/>      
+                    </td>
+                    <td>
+                        <a href="/deletarFuncionario/{{this.id_funcionario}}">
+                            <img width="30" height="30" src="https://img.icons8.com/quill/50/filled-trash.png" alt="filled-trash"/>
+                        </a>
+                    </td>
+
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <script src="/js/editar.js"></script>
+ {{>voltar}}
+</div>

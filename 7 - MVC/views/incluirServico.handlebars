@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" href="/css/servico.css">
+<div class="service_container">
+    <h1> Incluir Novo Serviço </h1>
+
+    <div class="servico_cliente">
+        <h2>Dados do Cliente </h2>
+        <label class="buscar_cpf" for="">
+            <span>CPF: </span> 
+            <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF do cliente"> 
+            <button class="btn_buscar_cliente">Buscar Cliente</button>
+        </label>
+        <label for=""><span class="rotulo">Nome: </span> <span class="res"></span> </label>
+    </div>
+    <hr>
+    <div class="servico_veiculo">
+        <h3>Dados do Veículo </h3>
+        <label for=""> <span span class="rotulo">Modelo: </span> <span class="res"></span></label>
+        <label for=""> <span span class="rotulo">Marca: </span> <span class="res"></span></label>
+        <label for=""> <span span class="rotulo">Placa: </span> <span class="res"></span></label>
+        <label for=""> <span span class="rotulo">Ano: </span> <span class="res"></span></label>
+        <label class="data" for=""> <span span class="rotulo">Data: </span> <span class="res"></span> <span class="rotulo">Hora:</span> <span class="res"></span></label>
+    </div>
+    <button class="btn_incluir_servico">Incluir Serviço</button>    
+</div>
+ {{>voltar}}
+<script src="/js/buscarClienteCpf.js"></script>
+<script src="/js/incluirServico.js"></script>

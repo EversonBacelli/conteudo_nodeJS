@@ -1,0 +1,56 @@
+
+<link rel="stylesheet" href="/css/cadastro.css">
+
+<h1 class="titulo_cadastrar"> Cadastrar Cliente</h1>
+
+
+<form action="/cadastroCliente" id="container_cadastro" method="post">
+    <div class="dados_cliente">
+        <h2> <img width="20" height="20" src="https://img.icons8.com/color/48/pretty-woman.png" alt="pretty-woman"/> <span> Dados Cliente</span> <img width="20" height="20" src="https://img.icons8.com/stickers/100/user.png" alt="user"/></h2>
+        <label for=""><span>CPF</span><input type="text" name="cpf" id=""></label>
+        <label for=""><span>Nome</span><input type="text" name="nome" id=""></label>
+        <label for="">
+            <span>Sexo</span>
+            <select name="sexo">
+                <option value="Masculino" selected>Masculino</option>
+                <option value="Feminino" >Feminino</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </label>
+        <label for=""><span>Data de Nascimento</span><input type="date" name="dataNasc" id=""></label>
+        <label for=""><span>N° CNH</span><input type="text" name="cnh" id=""></label>
+        <label for=""><span>Endereço</span><input type="text" name="endereco" id=""></label>
+    </div>
+    <hr>
+    <div class="dados_veiculo">
+        <h2 > <img width="20" height="20" src="https://img.icons8.com/clouds/100/motorcycle.png" alt="motorcycle"/> <span>Dados Veiculo</span>  <img width="20" height="20" src="https://img.icons8.com/bubbles/50/car.png" alt="car"/></h2>
+        <label for=""><span>Modelo</span><input type="text" name="modelo" id=""></label>
+        <label for=""><span>Marca</span><input type="text" name="marca" id=""></label>
+        <label for=""><span>Ano</span><input type="text" name="ano" id=""></label>
+        <label for=""><span>Placa</span><input type="text" name="placa" id=""></label>
+        <label for=""><span>Cor</span><input type="text" name="cor" id=""></label>
+        <label for="">
+            <span>Quantidade de Portas</span>
+             <select name="qtdPortas">
+                 <option value="2" selected>2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+                <option value="5">5</option>
+            </select>
+        </label>
+        <label for="">
+            <span>Desempenho Médio</span>
+             <div class="slider">
+                 <input type="range" id="des" name="desempenho" min="1" max="30"> <span class="span_des">  </span>
+             </div>
+        </label>
+        <label for="">
+            <span>Quilometragem</span>
+            <div class="slider">
+                <input type="range" id="km" name="quilometragem" min="1" max="500000"> <span class="span_km" > </span>
+            </div>
+    </div>
+   
+    <button type="submit">Cadastrar</button>
+</form>
+ {{>voltar}}

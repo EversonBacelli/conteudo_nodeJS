@@ -1,0 +1,20 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMNAQe2kKUoFIcioeai0O6AjeG_CP4I8mrg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+}
+
+table{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: dashed black 2px ;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+td, th{
+    border: solid black 2px;
+    padding: 5px
+}

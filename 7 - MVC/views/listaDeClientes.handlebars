@@ -1,0 +1,45 @@
+
+<link rel="stylesheet" href="/css/clientes.css">
+<div class="container_lista_clientes">
+    <h1>Lista de Clientes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Cpf</th>
+                <th>Nasc</th>
+                <th>CNH</th>
+
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Ano</th>
+                <th>Placa</th>
+                <th>Cor</th>
+                <th>Portas</th>
+                <th>Desempenho</th>
+                <th>KM</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+                <tr>
+                    <td>{{this.nome}}</td>
+                    <td>{{this.sexo}}</td>
+                    <td>{{this.cpf}}</td>
+                    <td>{{this.dataNasc}}</td>
+                    <td>{{this.cnh}}</td>
+                    <td class="car">{{this.modelo}}</td>
+                    <td class="car">{{this.marca}}</td>
+                    <td class="car">{{this.ano}}</td>
+                    <td class="car">{{this.placa}}</td>
+                    <td class="car">{{this.cor}}</td>
+                    <td class="car">{{this.qtdPortas}}</td>
+                    <td class="car">{{this.desempenho}}</td>
+                    <td class="car">{{this.quilometragem}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{>voltar}}
+</div>

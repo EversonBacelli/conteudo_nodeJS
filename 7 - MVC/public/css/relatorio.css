@@ -1,0 +1,26 @@
+
+.relatorio_container{
+    background-color: white;
+    padding: 20px;
+    border: solid black 4px;
+    z-index: 2;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.relatorio_aberto, .relatorio_fechado{
+    background-color: gray;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.relatorio_aberto th, .relatorio_aberto td, .relatorio_fechado th, .relatorio_fechado td{
+    border: solid black 1px;
+    padding: 5px;
+}
+
+th{
+    background-color: black;
+    color: white;
+}

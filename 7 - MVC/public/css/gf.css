@@ -1,0 +1,59 @@
+
+.container_funcionarios{
+    background-color: #A8F8A7 ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 900px;
+    align-items: center;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.container_funcionarios h1{
+    text-align: center;
+}
+
+.container_funcionarios form{
+    display: flex;
+    height: 30%;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding: 20px;
+    gap: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.container_funcionarios form label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_funcionarios form label input {
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+.container_funcionarios form label span{
+    width: 100px;
+}
+
+.container_funcionarios td  {
+    border: solid black 2px;
+    padding: 5px;
+}
+
+.container_funcionarios th{
+    border: solid gray 2px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+
+}

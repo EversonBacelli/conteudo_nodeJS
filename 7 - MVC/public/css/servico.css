@@ -1,0 +1,69 @@
+
+.service_container{
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-shadow: 2px 2px 8px #FF0000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: solid black 1px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.servico_cliente, .servico_veiculo{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+    width: 90%;
+}
+
+.servico_cliente label, .servico_veiculo label{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.rotulo{
+    width: 15%;
+}
+
+.servico_veiculo{
+    margin-bottom: 10px;
+}
+
+.btn_incluir_servico{
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+.buscar_cpf{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}
+
+.buscar_cpf input{
+    height: 20px;
+    padding: 5px;
+}
+
+
+.data{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.res{
+    margin-right: 20px;
+}

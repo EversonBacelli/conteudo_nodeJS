@@ -1,0 +1,41 @@
+
+
+.container_editar_funcionario{
+    background-color: #A8F8A7 ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    align-items: center;
+}
+
+.container_editar_funcionario form{
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding: 20px;
+    gap: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.container_editar_funcionario form label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_editar_funcionario form label input {
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+.container_editar_funcionario form label span{
+    width: 100px;
+}

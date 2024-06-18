@@ -1,0 +1,113 @@
+body{
+    background-image: url("../img/fundo_cadastro.jpeg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    padding: 60px;
+}
+
+nav{
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border: solid black 2px;
+    box-shadow: 5px 5px 10px yellow;
+    position: fixed;
+    top: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+h1{
+    font-weight: 200;
+    font-style: italic;
+    font-palette: inherit;
+    margin-bottom: 100px;
+}
+
+table{
+    background-color: gray;
+    padding: 60px;
+    opacity: 0.7;
+    border-radius: 20px;
+    border: black 1px dashed ;
+    margin-left: 100px;
+}
+
+td{
+    border: solid black 2px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 1.0 !important;
+    
+}
+
+thead{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    text-align: start;
+}
+
+tbody{
+    font-size: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    padding: 10px;
+    border: solid black 2px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border-radius: 10px;
+}
+
+span{
+    width: 50px;
+    padding: 5px;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+label{
+    width: 500px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn{
+    width: 100px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.add{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+#titulo{
+    font-size: 100px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}

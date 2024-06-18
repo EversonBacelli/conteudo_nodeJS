@@ -1,0 +1,18 @@
+
+<link rel="stylesheet" href="/css/editarFuncionario.css">
+<div class="container_editar_funcionario">
+    <h1>Editar Funcionario</h1>
+    <form action="/editarFuncionario" method="post">
+        <label for=""><span>Nome</span> <input type="text" name="nome" value="{{this.nome}}"></label>
+        <label for=""><span>Endereço</span> <input type="text" name="endereco" value="{{this.endereco}}"></label>
+        <label for=""><span>Cpf</span> <input type="text" name="cpf" value="{{this.cpf}}"></label>
+        <label for=""><span>Telefone</span> <input type="text" name="telefone" value="{{this.telefone}}"></label>
+        <label for=""><span>Senha</span> <input type="text" name="senha" value="{{this.senha}}"></label>
+        <label for=""><span>Email</span> <input type="text" name="email" value="{{this.email}}"></label>
+        <button class="btn_editar">Atualizar Funcionario</button>
+    </form>
+
+    <script src="/js/incluirDados.js"></script>
+</div>
+
+ {{>voltar}}

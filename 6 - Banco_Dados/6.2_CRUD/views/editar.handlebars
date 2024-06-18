@@ -1,0 +1,11 @@
+<h1>Editar Fornecedores</h1>
+
+<form action="/crud/editar" method="POST">
+    {{#each data}}
+        <label for=""><span>Código: </span> <input type="text" name="codigo" id="" value={{this.codigo}}> </label> 
+        <label for=""><span>Nome: </span> <input type="text" name="nome" id="" value={{this.nome}}></label> 
+        <label for=""><span>Email: </span>  <input type="text" name="email" id="" value={{this.email}}></label>
+    {{/each}}
+
+    <input type="submit" value="EDITAR" id="btn">
+</form>

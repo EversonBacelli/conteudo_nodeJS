@@ -1,0 +1,76 @@
+
+<link rel="stylesheet" href="/css/relatorio.css">
+<div class="relatorio_container">
+    <div class="relatorio_aberto">
+        <h1>Serviços em Aberto</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>codigo</th>
+                    <th>cpf</th>
+                    <th>nome do cliente</th>
+                    <th>modelo</th>
+                    <th>marca</th>
+                    <th>placa</th>
+                    <th>ano</th>
+                    <th>hora_inicio</th>
+                    <th>data</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each aberto}}
+                    <tr>
+                        <td>{{this.codigo}}</td>
+                        <td>{{this.cpf}}</td>
+                        <td>{{this.nome}}</td>
+                        <td>{{this.modelo}}</td>
+                        <td>{{this.marca}}</td>
+                        <td>{{this.placa}}</td>
+                        <td>{{this.ano}}</td>
+                        <td>{{this.hora_inicio}}</td>
+                        <td>{{this.data}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="relatorio_fechado">
+        <h1>Serviços Fechados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>codigo</th>
+                    <th>cpf</th>
+                    <th>nome do cliente</th>
+                    <th>modelo</th>
+                    <th>marca</th>
+                    <th>placa</th>
+                    <th>ano</th>
+                    <th>hora_inicio</th>
+                    <th>hora_fim</th>
+                    <th>valor</th>
+                    <th>data</th>
+                </tr>
+            </thead>
+            <tbody>
+                 {{#each fechado}}
+                    <tr>
+                        <td>{{this.codigo}}</td>
+                        <td>{{this.cpf}}</td>
+                        <td>{{this.nome}}</td>
+                        <td>{{this.modelo}}</td>
+                        <td>{{this.marca}}</td>
+                        <td>{{this.placa}}</td>
+                        <td>{{this.ano}}</td>
+                        <td>{{this.hora_inicio}}</td>
+                        <td>{{this.hora_fim}}</td>
+                        <td>{{this.valor}}</td>
+                        <td>{{this.data}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+     {{>voltar}}
+</div>

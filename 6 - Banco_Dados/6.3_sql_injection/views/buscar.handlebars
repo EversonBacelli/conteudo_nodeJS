@@ -1,0 +1,43 @@
+
+<h1>Lista de Fornedores</h1>
+
+<table>
+    
+    <thead>   
+        <tr>
+            <td>Codigo</td>
+            <td>Nome</td>
+            <td>Email</td>
+            <td>Editar</td>
+            <td>Excluir</td>
+
+        </tr>
+    </thead>
+    <tbody>
+{{#each data}}
+        <tr>
+            <td>{{this.codigo}}</td>
+            <td>{{this.nome}}</td>
+            <td>{{this.email}}</td>
+            <td>
+                <a href=http://localhost:3000/crud/editar/{{this.codigo}}>
+                    <img width="50" height="50" src="https://img.icons8.com/cotton/64/edit--v1.png" alt="edit--v1"/>
+                </a>
+            </td>
+            <td>
+                <a href="http://localhost:3000/crud/delete/{{this.codigo}}">
+                    <img width="50" height="50" src="https://img.icons8.com/plasticine/100/filled-trash.png" alt="filled-trash"/>
+                </a>
+            </td>
+
+        </tr>
+{{/each}}
+                
+    </tbody>
+          
+</table>
+  <div class="add">
+        <a href="http://localhost:3000/crud/incluir"> 
+            <img width="50" height="50" src="https://img.icons8.com/plasticine/100/add--v1.png" alt="add--v1"/>
+        </a>
+  </div>

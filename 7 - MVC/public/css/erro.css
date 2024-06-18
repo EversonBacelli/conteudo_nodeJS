@@ -1,0 +1,12 @@
+
+.error{
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    background-image: url("../img/error.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    border-radius: 20px;
+    border: dashed white 3px;
+}
